@@ -6,6 +6,10 @@ type traceLog struct {
 	defaultFields []zap.Field
 }
 
+func (t traceLog) Errof(err error, fields ...zap.Field) {
+	Errof(err, append(t.defaultFields, fields...)...)
+}
+
 func (t traceLog) Warn(msg string, fields ...zap.Field) {
 	Warn(msg, append(t.defaultFields, fields...)...)
 }

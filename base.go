@@ -8,4 +8,5 @@ type IBaseLogger interface {
 	Error(msg string, fields ...zap.Field)
 	Debug(msg string, fields ...zap.Field)
 	Panic(msg string, fields ...zap.Field)
+	Errof(err error, fields ...zap.Field)
 }
