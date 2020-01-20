@@ -26,9 +26,8 @@ func B()  {
 ```go
 package main
 import (
-
-"github.com/farwydi/shared-log"
-"go.uber.org/zap"
+    "github.com/farwydi/shared-log"
+    "go.uber.org/zap"
 )
 
 func main()  {
